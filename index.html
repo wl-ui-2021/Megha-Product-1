@@ -13,23 +13,66 @@
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="shoping.css">
+<link rel="stylesheet" href="shopping2.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <title>MyShopping</title>
 </head>
 <body >
-    
-        <div class="container-fluid">
-            <nav class="navbar navbar-dark bg-dark text-white">
-              <a class="navbar-brand"><i class="fa fa-product-hunt fa-2x" ></i></a>
-              <a class="navbar-brand"><h3>MyCart</h3></a>
-          <div class="d-flex">
-            <a href="https://facebook.com" class="navbar-brand "><i class="fa fa-facebook"></i></a>
-            <a href="https://gmail.com" class="navbar-brand"><i class="fa fa-envelope" ></i></a>
-            <a href="https://twitter.com" class="navbar-brand "><i class="fa fa-twitter" ></i></a> 
-            <div class="dropdown show">
-              <i class=" fa fa-shopping-cart fa-2x  dropdown-toggle" data-bs-toggle="dropdown" ></i>
-                <div id="shoppping-cart" class="dropdown-menu dropdown-menu-right">
+  <!-- MOdal -->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-danger">
+          <h5 class="modal-title">warning</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>can't be reached negative quantity.</strong></p>
+        </div>
+        <div class="modal-footer bg-warning">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--model2-->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content ">
+        <div class="modal-header bg-warning">
+          <h5 class="modal-title">warning</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+          <p><strong>max 7 is allowed.</strong></p>
+        </div>
+        <div class="modal-footer bg-danger">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal ends -->
+  <!--model-->
+
+ 
+   
+       <nav class="navbar navbar-dark bg-dark text-white expand-sm">
+           <a class="navbar-brand"><i class="fa fa-product-hunt fa-2x" ></i></a>
+             <a class="navbar-brand"><h3>MyCart</h3></a>
+               <div class="d-flex">
+                 <a href="https://facebook.com" class="navbar-brand "><i class="fa fa-facebook"></i></a>
+                   <a href="https://gmail.com" class="navbar-brand"><i class="fa fa-envelope" ></i></a>
+                    <a href="https://twitter.com" class="navbar-brand "><i class="fa fa-twitter" ></i></a> 
+                     <div class="dropdown show">
+                        <i class=" fa fa-shopping-cart fa-2x  dropdown-toggle" data-bs-toggle="dropdown" ></i>
+                           <div id="shoppping-cart" class="dropdown-menu dropdown-menu-right">
                   <table id="card-content">
                           <thead>
                               <tr>
@@ -44,13 +87,13 @@
              
           </div>
           </div>
-        </div>
+        
       </nav>
       <!--cart items details-->
       
       <img src="https://www.desktopbackground.org/download/1920x1080/2011/02/15/158264_i-love-shopping-wallpapers-hd-wallpapers-83219_1920x1200_h.jpg" class="img-responsive" width="100%" height="600px"id="h-img">
                              
-<div class="container-fluid" id="item-list">
+<div class="container-fluid"id="item-list" >
   <div class="row">
     <div class="col-md-10 col-11 mx-auto">
       <div class="row mt-5 gx-3">
@@ -60,7 +103,7 @@
           <h2 class="py-4 font-weight-bold">Cart (2 items)</h2>
             <div class="row ">
 <!-- cart images div -->
-<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img"id="item-list">
 <img src="https://m.media-amazon.com/images/I/71X8P0uWy1S._AC_UL480_FMwebp_QL65_.jpg" class="img-fluid" alt="cart img">
 </div>
 
@@ -69,7 +112,7 @@
 
 <!-- cart product details -->
 
-<div class="col-md-7 col-11 mx-auto px-4 mt-2">
+<div class="col-md-7 col-11 mx-auto px-4 mt-2"id="item-list">
 <div class="row">
 <!-- product name  -->
 <div class="col-6 card-title">
@@ -96,7 +139,7 @@
 <div class="row">
 <div class="col-8 d-flex justify-content-between remove_wish">
 <button class="btn btn-light"><i class="fas fa-trash-alt text-dark"></i></button>
-<button class="btn btn-danger"data-id="1"><i class="fas fa-heart add-To-Cart"></i> </button>
+<button class="btn btn-danger"  data-id="1" onclick="getItemInfo(this)"><i class="fas fa-heart add-To-Cart"></i> </button>
 </div>
 <div class="col-4 d-flex justify-content-end price_money">
 <h3>$<span id="itemval">0.00 </span></h3>
@@ -107,8 +150,9 @@
 </div>
 <hr/>
 
+
 <!-- 2nd cart product -->
-<div class="card p-4">
+<div class="card p-4 mb-2">
 <div class="row">
 <!-- cart images div -->
 <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
@@ -173,7 +217,7 @@
 <p>The total amount of (including VAT)</p>
 <p>$<span id="total_cart_amt">0.00</span></p>
 </div>
-<button class="btn btn-primary text-uppercase btn-checkout">Checkout</button>
+
 </div>
 <!-- discount code part -->
 <div class="discount_code mt-3 shadow">
@@ -188,13 +232,46 @@ Add a discount code (optional)
 <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
 <small id="error_trw" class="text-dark mt-3">reffer your coupon code</small>
 </div>
-<button class="btn btn-primary btn-sm mt-3"id='apply' onclick="discount_code()">Apply</button>
+<button class="btn btn-info btn-sm mt-3"id='apply' onclick="discount_code()">Apply</button>
 </div>
 </div>
 </div>
 </div>
+<br>
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Checkout</button>
 
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-product-hunt fa-2x mx-2" ></i>Ready for Payment&nbsp;<i class="fa fa-paypal " aria-hidden="true"></i><i class="fa fa-google-wallet mx-3" aria-hidden="true"></i><i class="fa fa-credit-card-alt" aria-hidden="true"></i></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body bg-danger">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Enter your Name:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Enter your Number:</label>
+            <input type="text" class="form-control" id="number-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Enter your paytm/gogglepay linked no.</label>
+            <input type="number" class="form-control" id="cash-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" id='close' data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-dark" id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- discount code ends -->
@@ -219,12 +296,11 @@ Add a discount code (optional)
 
   </footer>                           
 
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./shoppingcart1.js"></script>
   <script src="./shoppingcart2.js"></script>
 </body>
 </html>
 
-
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
