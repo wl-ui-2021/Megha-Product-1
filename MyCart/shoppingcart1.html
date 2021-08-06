@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="shopping2.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet"> 
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="shoping.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<title>MyShopping</title>
+</head>
+<body >
+    
+        <div class="container-fluid">
+            <nav class="navbar navbar-dark bg-dark text-white">
+              <a class="navbar-brand"><i class="fa fa-product-hunt fa-2x" ></i></a>
+              <a class="navbar-brand"><h3>MyCart</h3></a>
+          <div class="d-flex">
+            <a href="https://facebook.com" class="navbar-brand "><i class="fa fa-facebook"></i></a>
+            <a href="https://gmail.com" class="navbar-brand"><i class="fa fa-envelope" ></i></a>
+            <a href="https://twitter.com" class="navbar-brand "><i class="fa fa-twitter" ></i></a> 
+            <div class="dropdown show">
+              <i class=" fa fa-shopping-cart fa-2x  dropdown-toggle" data-bs-toggle="dropdown" ></i>
+                <div id="shoppping-cart" class="dropdown-menu dropdown-menu-right">
+                  <table id="card-content">
+                          <thead>
+                              <tr>
+                                  <th scope="col">Image</th>
+                                  <th scope="col">Name</th>
+                              </tr>
+                          
+                          </thead>
+                  </table>
+
+              </div>
+             
+          </div>
+          </div>
+        </div>
+      </nav>
+      <!--cart items details-->
+      
+      <img src="https://www.desktopbackground.org/download/1920x1080/2011/02/15/158264_i-love-shopping-wallpapers-hd-wallpapers-83219_1920x1200_h.jpg" class="img-responsive" width="100%" height="600px"id="h-img">
+                             
+<div class="container-fluid" id="item-list">
+  <div class="row">
+    <div class="col-md-10 col-11 mx-auto">
+      <div class="row mt-5 gx-3">
+<!-- left side div -->
+      <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+        <div class="card p-4 ">
+          <h2 class="py-4 font-weight-bold">Cart (2 items)</h2>
+            <div class="row ">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="https://m.media-amazon.com/images/I/71X8P0uWy1S._AC_UL480_FMwebp_QL65_.jpg" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+
+<div class="col-md-7 col-11 mx-auto px-4 mt-2">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">TOZO T5 Bluetooth Headphones</h1>
+<p class="mb-2 text-white">True Wireless Earbuds Sport Earphones Touch Control Headset with Wireless Charging,Bass Stereo,Sweatproof for Running, Gym, Workout</p>
+
+</div>
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+<li class="page-item">
+<button class="page-link " onclick="decreaseNumber('textbox','itemval')">
+<i class="fas fa-minus"></i> </button>
+</li>
+<li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox" >
+</li>
+<li class="page-item">
+<button class="page-link" onclick="increaseNumber('textbox','itemval')"> <i class="fas fa-plus"></i></button>
+</li>
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+<button class="btn btn-light"><i class="fas fa-trash-alt text-dark"></i></button>
+<button class="btn btn-danger"data-id="1"><i class="fas fa-heart add-To-Cart"></i> </button>
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>$<span id="itemval">0.00 </span></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+
+<!-- 2nd cart product -->
+<div class="card p-4">
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="https://m.media-amazon.com/images/I/61se0tlgB4L._AC_UL480_FMwebp_QL65_.jpg" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Otium Wireless Headphones, Bluetooth Headphones</h1>
+<p class="mb-2 text-white">IPX7 Waterproof Stereo Earphones for Gym Running 9 Hours Playtime Noise Cancelling Headsets</p>
+
+</div>
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+<li class="page-item">
+<button class="page-link " onclick="decreaseNumber('textbox1','itemval1')"> <i class="fas fa-minus"></i> </button>
+</li>
+<li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox1" >
+</li>
+<li class="page-item">
+<button class="page-link" onclick="increaseNumber('textbox1','itemval1')"> <i class="fas fa-plus"></i></button>
+</li>
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+  <button class="btn btn-light"><i class="fa fa-trash text-dark"></i> </button>
+<butoon class="btn btn-danger"data-id="2"><i class="fas fa-heart add-To-Cart"></i></butoon>
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>$<span id="itemval1">0.00 </span> </h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- right side div -->
+<div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+<div class="right_side p-3 shadow ">
+<h2 class="product_name mb-5">The Total Amount Of</h2>
+<div class="price_indiv d-flex justify-content-between">
+<p>Product amount</p>
+<p>$<span id="product_total_amt">0.00</span></p>
+</div>
+<div class="price_indiv d-flex justify-content-between">
+<p>Shipping Charge</p>
+<p>$<span id="shipping_charge">50.0</span></p>
+</div>
+<hr />
+<div class="total-amt d-flex justify-content-between font-weight-bold">
+<p>The total amount of (including VAT)</p>
+<p>$<span id="total_cart_amt">0.00</span></p>
+</div>
+<button class="btn btn-primary text-uppercase btn-checkout">Checkout</button>
+</div>
+<!-- discount code part -->
+<div class="discount_code mt-3 shadow">
+<div class="card">
+<div class="card-body">
+<a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+Add a discount code (optional)
+<span><i class="fas fa-chevron-down pt-1"></i></span>
+</a>
+<div class="collapse" id="collapseExample">
+<div class="mt-3">
+<input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+<small id="error_trw" class="text-dark mt-3">reffer your coupon code</small>
+</div>
+<button class="btn btn-primary btn-sm mt-3"id='apply' onclick="discount_code()">Apply</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- discount code ends -->
+<div class="mt-3 shadow p-3 dis-ends">
+<div class="pt-4">
+<h5 class="mb-4">Expected delivery date</h5>
+<p>Aug/10/2021 - Aug/18/ 2020</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="bg-dark text-white text-center py-2">
+    <a href="#" class="navbar-brand ">Home</a>
+    <a href="About.html" class="navbar-brand ">About</a>
+    <a href="Contactus.html" class="navbar-brand ">ContactUs</a><br> 
+   <span ><small class="mx-2">Copy@rightby</small></span>
+    <span><small class="mx-6">Megha Sahu</small></span>
+
+  </footer>                           
+
+
+  <script src="./shoppingcart1.js"></script>
+  <script src="./shoppingcart2.js"></script>
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
