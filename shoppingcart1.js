@@ -44,7 +44,7 @@ let newtotalamt = totalamtcurr - 15;
 total_cart_amt.innerHTML = newtotalamt;
 error_trw.innerHTML = "congratulation succesfully applid code";
 }else{
-error_trw.innerHTML = "Try Again! Valid code is thapa";
+error_trw.innerHTML = "Try Again! Valid code is Megha";
 }
 }
 
