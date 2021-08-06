@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+}
+.card{
+    margin-left: 500px;
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.2);
+}
