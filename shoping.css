@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;padding: 0;box-sizing: 0;
+    font-family: 'Comic Neue', cursive;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0,0, 0, 0.1);
+    width: 100%;
+    
+    
+    
+}
+.card{
+    background-color: rgba(0,0, 0, 0.5);
+}
+
+    
+
+
+ header .nav{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+/* a{
+    text-decoration: none;
+    color: var(--text-clr);
+} */
+
+h2{
+    color: var(--text-clr);
+    font-size: 1.5rem;
+}
+.card{
+    border: none;
+    box-shadow: 0px 0px 10px black;
+}
+
+#p-img:hover{
+   
+    animation: flip;
+    animation-duration: 2s ;/* referring directly to the animation's @keyframe declaration */
+    cursor: pointer;
+}
+#p-img{
+    min-width: 400px;
+    max-height: 300px;
+}
+#delete #wish p{
+    font-size: 0.8rem;
+    font-weight: 600;
+
+}
+.set_quantity{
+    position: relative;
+}
+.set_quantity::after{
+    content: "(vote, 1 piece)";
+    width: auto;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    bottom: -20px;
+    right: 1rem;
+    font-size: 0.8rem;
+}
+.page-link{
+    width: 25px;
+    line-height: 22px;
+    padding: 3px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fa-heart:hover{
+    color: red;
+}

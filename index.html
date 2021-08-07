@@ -1,0 +1,304 @@
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="shopping2.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet"> 
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="shopping2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<title>MyShopping</title>
+</head>
+<body >
+  <!-- MOdal -->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-danger">
+          <h5 class="modal-title">warning</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>can't be reached negative quantity.</strong></p>
+        </div>
+        <div class="modal-footer bg-warning">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--model2-->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content ">
+        <div class="modal-header bg-warning">
+          <h5 class="modal-title">warning</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+          <p><strong>max 7 is allowed.</strong></p>
+        </div>
+        <div class="modal-footer bg-danger">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal ends -->
+  <!--model-->
+
+ 
+   
+       <nav class="navbar fixed-top navbar-expand-lg  p-md-3">
+          <div class="container">
+            <a href="#" class="navbar-brand"><img src="https://s.yimg.com/fz/api/res/1.2/SlH1R7vLOXvLcBgFJW3L1Q--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MjYw/https://s.yimg.com/zb/imgv1/61d518eb-6b38-352d-99cb-1a0160494830/t_1024x1024" width="35px"height="35px"></a>
+             <a class="navbar-brand"><h` class="text-white">MyCart</h1></a>
+               <div class="d-flex">
+
+                <div class="dropdown" style="padding-right: 10px;">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                  </button>
+                  <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" id="cart-content">
+                  
+                  </div>
+                </div>
+
+                 <a href="https://facebook.com" class="navbar-brand mx-2 "><img src=" //www.nuget.org/Content/gallery/img/facebook.svg" width="20px" height="20px" alt="FB"></a>
+                   <a href="https://www.linkedin.com" class="navbar-brand mx-2"><img src="https://tse3.mm.bing.net/th?id=OIP.3pxLpR-nK5phNlY-FsYDKgAAAA&pid=Api&P=0&w=300&h=300" width="20px" height="20px"></a>
+                    <a href="https://twitter.com" class="navbar-brand mx-2"><img src="  //www.nuget.org/Content/gallery/img/twitter.svg" width="20px" height="20px" alt="twitter"></a>
+          </div>
+          </div>
+      </nav>
+      <!--cart items details-->
+      
+      <img src="https://www.desktopbackground.org/download/1920x1080/2011/02/15/158264_i-love-shopping-wallpapers-hd-wallpapers-83219_1920x1200_h.jpg" class="img-responsive" width="100%" height="600px"id="h-img">
+                             
+<div class="container-fluid"id="item-list" >
+  <div class="row">
+    <div class="col-md-10 col-11 mx-auto">
+      <div class="row mt-5 gx-3">
+<!-- left side div -->
+      <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+        <div class="card p-4 ">
+          <h2 class="py-4 font-weight-bold">Cart (2 items)</h2>
+            <div class="row ">
+<!-- cart1 images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img"id="item-list">
+<img src="https://m.media-amazon.com/images/I/71X8P0uWy1S._AC_UL480_FMwebp_QL65_.jpg" class="img-fluid" alt="cart img">
+
+<button class="btn btn-danger"  data-id="1" onclick="getItemInfo(this)"><i class="fas fa-heart add-To-Cart"></i> </button>
+</div>
+
+
+
+
+
+<!-- cart product details -->
+
+<div class="col-md-7 col-11 mx-auto px-4 mt-2"id="item-list">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">TOZO T5 Bluetooth Headphones</h1>
+<p class="mb-2 text-white">True Wireless Earbuds Sport Earphones Touch Control Headset with Wireless Charging,Bass Stereo,Sweatproof for Running, Gym, Workout</p>
+
+</div>
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+<li class="page-item">
+<button class="page-link " onclick="decreaseNumber('textbox','itemval')">
+<i class="fas fa-minus"></i> </button>
+</li>
+<li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox" >
+</li>
+<li class="page-item">
+<button class="page-link" onclick="increaseNumber('textbox','itemval')"> <i class="fas fa-plus"></i></button>
+</li>
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>$<span id="itemval">0.00 </span></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+
+
+<!-- 2nd cart product -->
+<div class="card p-4 mb-2">
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="https://m.media-amazon.com/images/I/61se0tlgB4L._AC_UL480_FMwebp_QL65_.jpg" class="img-fluid" alt="cart img">
+
+<butoon class="btn btn-danger"data-id="2"  onclick="getItemInfo(this)"><i class="fas fa-heart add-To-Cart"></i></butoon>
+</div>
+
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Otium Wireless Headphones, Bluetooth Headphones</h1>
+<p class="mb-2 text-white">IPX7 Waterproof Stereo Earphones for Gym Running 9 Hours Playtime Noise Cancelling Headsets</p>
+
+</div>
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+<li class="page-item">
+<button class="page-link " onclick="decreaseNumber('textbox1','itemval1')"> <i class="fas fa-minus"></i> </button>
+</li>
+<li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox1" >
+</li>
+<li class="page-item">
+<button class="page-link" onclick="increaseNumber('textbox1','itemval1')"> <i class="fas fa-plus"></i></button>
+</li>
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+ 
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>$<span id="itemval1">0.00 </span> </h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- right side div -->
+<div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+<div class="right_side p-3 shadow ">
+<h2 class="product_name mb-5">The Total Amount Of</h2>
+<div class="price_indiv d-flex justify-content-between">
+<p>Product amount</p>
+<p>$<span id="product_total_amt">0.00</span></p>
+</div>
+<div class="price_indiv d-flex justify-content-between">
+<p>Shipping Charge</p>
+<p>$<span id="shipping_charge">50.0</span></p>
+</div>
+<hr />
+<div class="total-amt d-flex justify-content-between font-weight-bold">
+<p>The total amount of (including VAT)</p>
+<p>$<span id="total_cart_amt">0.00</span></p>
+</div>
+
+</div>
+<!-- discount code part -->
+<div class="discount_code mt-3 shadow">
+<div class="card">
+<div class="card-body">
+<a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+Add a discount code (optional)
+<span><i class="fas fa-chevron-down pt-1"></i></span>
+</a>
+<div class="collapse" id="collapseExample">
+<div class="mt-3">
+<input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+<small id="error_trw" class="text-dark mt-3">reffer your coupon code</small>
+</div>
+<button class="btn btn-info btn-sm mt-3"id='apply' onclick="discount_code()">Apply</button>
+</div>
+</div>
+</div>
+</div>
+<br>
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Checkout</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-product-hunt fa-2x mx-2" ></i>Ready for Payment&nbsp;<i class="fa fa-paypal " aria-hidden="true"></i><i class="fa fa-google-wallet mx-3" aria-hidden="true"></i><i class="fa fa-credit-card-alt" aria-hidden="true"></i></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Enter your Name:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="number-name" class="col-form-label">Enter your Number:</label>
+            <input type="number" class="form-control" id="number-name">
+          </div>
+          <div class="form-group">
+            <label for="cash-name" class="col-form-label">Enter your paytm/gogglepay linked no.</label>
+            <input type="number" class="form-control" id="cash-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" id='close' data-dismiss="modal">Close</button>
+        <button type="button"onclick="validate()"class="btn btn-dark" id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- discount code ends -->
+<div class="mt-3 shadow p-3 dis-ends">
+<div class="pt-4">
+<h5 class="mb-4">Expected delivery date</h5>
+<p class="text-dark">Aug/10/2021 - Aug/18/ 2020</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="bg-dark text-white text-center py-2">
+    <a href="#" class="navbar-brand ">Home</a>
+    <a href="About.html" class="navbar-brand ">About</a>
+    <a href="Contactus.html" class="navbar-brand ">ContactUs</a><br> 
+   <span ><small class="mx-2 text-info">Copy@rightby</small></span>
+    <span><small class="mx-6 text-info">Megha Sahu</small></span>
+
+  </footer>                           
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./shoppingcart1.js"></script>
+  <script src="./shoppingcart2.js"></script>
+</body>
+</html>
+
